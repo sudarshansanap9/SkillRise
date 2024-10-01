@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilllancers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">  
+    <link rel="icon" href="images/picture/Skilllancer title logo.png" type="image/x-icon">
+    <style>
+        .container2 {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.team .row .card {
+    width: 100%;
+    max-width: 15rem;
+    margin: 1rem auto;
+}
+@media (max-width: 768px) {
+    .team .row .card {
+        width: 90%;
+    }
+}
+
+        html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container, .container-fluid {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+        /* team */
+  .team{
+      min-width: 100vw;
+      min-height:50vh;
+      text-align: center;
+      background-color: #222;
+  }
+  
+  .team .heading{
+      color: #00bfff;
+  }
+  
+  .team .heading::before, .team .heading::after{
+      border-color: #00bfff;
+  }
+  
+  .team .row{
+      display: inline-block;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  
+  .team .row .card{
+      height: 27.5rem;
+      width: 15rem;
+      background-color: #fff;
+      text-align: center;
+      margin: 5rem 5rem;
+      position: relative;
+      overflow: hidden;
+      -webkit-box-reflect: below 5px linear-gradient(transparent 70%, #0004);
+      transition: 0.5s;
+  }
+  
+  .team .row .card:hover{
+      transform: translateY(-10px);
+      cursor: pointer;
+  }
+  
+  
+  .team .row .card .image{
+      margin: 1rem 0;
+      padding-top: 2rem;
+  }
+  
+  .team .row .card .image img{
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      border: .5rem solid #fff;
+      box-shadow: 0 0 .5rem rgba(0,0,0,.3);
+      object-fit: cover;
+  }
+  
+  .team .row .card .info h3{
+      font-size: 2rem;
+      color: #333;
+  }
+  
+  .team .row .card .info span{
+      font-size: 1.8rem;
+      color: #00bfff;
+  }
+  
+  .team .row .card .info .icons a{
+      margin-top: 4rem;
+      padding-top: 0 0.5rem;
+      font-size: 1rem;
+      color: #333;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+  }
+  
+  .team .row .card .info .icons .fa-github:hover, .footer .icons .fa-github:hover{
+      color: #9c831d;
+      text-decoration: none;
+  }
+  
+  .team .row .card .info .icons .fa-pinterest:hover, .footer .icons .fa-pinterest:hover{
+      color: #f62828;
+      text-decoration: none;
+  }
+  
+  .team .row .card .info .icons .fa-twitter:hover, .footer .icons .fa-twitter:hover{
+      color: #1DA1F2;
+      text-decoration: none;
+  }
+  .team .row .card .info .icons .fa-facebook:hover, .footer .icons .fa-facebook:hover{
+      color: #1DA1F2;
+      text-decoration: none;
+  }
+  
+  .team .row .card .info .icons .fa-instagram:hover, .footer .icons .fa-instagram:hover{
+      color: #C13584;
+      text-decoration: none;
+  }
+  
+  .team .row .card .info .icons .fa-linkedin:hover, .footer .icons .fa-linkedin:hover{
+      color: #2867B2;
+      text-decoration: none;
+  }
+  
+  .team .row .card::before, .team .row .card::after{
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      height: 13.5rem;
+      width: 13.5rem;
+      z-index: -1;
+  }
+  
+  .team .row .card::before{
+      background: #00bfff;
+      top: -3rem;
+      right: -4rem;
+  }
+  
+  .team .row .card::after{
+      background: #ccc;
+      bottom: -3rem;
+      left: -4rem;
+  }
+  .service {
+            padding: 50px 0;
+        }
+        .service .card {
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .service .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        .service .card-body {
+            padding-bottom: 0;
+        }
+        .service .card-img-bottom {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .service .card-text {
+            font-size: 1rem;
+            color: #555;
+        }
+        .service .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: all 0.3s ease;
+        }
+        .service .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .footer-section {
+    padding-top: 55px;
+    background: #282531;
+    color: #FFFFFF;
+}
+.footer-p p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
+.footer-inner {
+    padding-bottom: 75px;
+}
+.footer-list-item ul li {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.footer-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.footer-list-item a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-list-item a:hover {
+    color: #ffdd57;
+    text-decoration: underline;
+}
+.social-links a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+.social-links a:hover {
+    color: #ffdd57;
+}
+
+small {
+    font-size: 16px;
+    line-height: 30px;
+    color: #CDCDCD;
+}
+.navbar img{
+    height: 80px;
+    width: 250px;
+}
+.testimonial-inner img{
+    height: 100px;
+    width: 300px;
+}
+
+        </style>
+</head>
+<body>
+    <!--
+    ===================
+        NAVIGATION
+    ===================
+    -->
+    <header class="nav-scroll fixed-top mh-xss-mobile-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="images/picture/Skilllancer logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#accomplishments">Accomplishments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li> 
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="#contact">Apply Us</a>
+                        </li>                           
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--
+    ==============
+        HOME 
+    ==============
+    -->
+    <section class="header-section d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <div class="header-details">
+                        <h6>Are you ready to Learn?</h6>
+                        <h1>BRIDGING TALENT  <br> WITH <span>THE FUTURE OF WORK</span></h1>
+                        <p>Skilllancers is a community where talent thrives on the belief that knowledge fuels innovation and growth. Together, we empower each other to succeed by making knowledge-sharing the cornerstone of our culture! </p>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 ml-auto">
+                    <div class="header-image">
+                        <img src="images/picture/header-image.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <!--
+    ==============
+        Cards 
+    ==============
+    -->  
+    <!-- <section class="cards-section sec-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cards-inner">
+                        <img src="images/icon/book.png" alt="" class="img-fluid">
+                        <h5>1500+ Topic</h5>
+                        <p>Learn Anythings</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cards-inner">
+                        <img src="images/icon/students-icon-2.png" alt="" class="img-fluid">
+                        <h5>1800+ Students</h5>
+                        <p>Learn Anythings</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cards-inner">
+                        <img src="images/icon/paper.png" alt="" class="img-fluid">
+                        <h5>9K+ Test Token</h5>
+                        <p>Learn Anythings</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cards-inner">
+                        <img src="images/icon/student-icon.png" alt="" class="img-fluid">
+                        <h5>2000+ Student</h5>
+                        <p>Learn Anythings</p>
+                    </div>
+                </div>                                                
+            </div>
+        </div>
+    </section>  -->
+    <!--
+    ==============
+        Course 
+    ==============
+    -->  
+    <!-- <section class="course-section sec-padding" id="course">      
+        <div class="container">
+            <h2 class="text-center title-text">Online Courses</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="images/picture/card-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Psychology</h5>
+                        <p class="card-text">Designation.</p>
+                        <button class="buy-btn">Buy Course</button>                  
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <div class="date d-flex">
+                                <img src="images/icon/calendar.png" alt="">
+                                <h6>Start 20  April, 2021</h6>
+                            </div>
+                            <div class="date d-flex">
+                                <img src="images/icon/people.png" alt="">
+                                <h6>60 seats</h6>
+                            </div>                            
+                        </div>
+                    </div>                
+                </div>
+                <div class="card">
+                    <img src="images/picture/card-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Psychology</h5>
+                        <p class="card-text">Designation.</p>
+                        <button class="buy-btn">Buy Course</button>                  
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <div class="date d-flex">
+                                <img src="images/icon/calendar.png" alt="">
+                                <h6>Start 20  April, 2021</h6>
+                            </div>
+                            <div class="date d-flex">
+                                <img src="images/icon/people.png" alt="">
+                                <h6>60 seats</h6>
+                            </div>                            
+                        </div>
+                    </div>                   
+                </div>
+                <div class="card">
+                    <img src="images/picture/card-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Psychology</h5>
+                        <p class="card-text">Designation.</p>
+                        <button class="buy-btn">Buy Course</button>                  
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <div class="date d-flex">
+                                <img src="images/icon/calendar.png" alt="">
+                                <h6>Start 20  April, 2021</h6>
+                            </div>
+                            <div class="date d-flex">
+                                <img src="images/icon/people.png" alt="">
+                                <h6>60 seats</h6>
+                            </div>                            
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>  -->
+    
+    <div id="about">
+    <h1  class="text-center pt-5  p-0" ><b >About Us</b></h1>
+    <hr class="mx-auto "  style="width: 30%; border: 1px solid ;color: #965151; ">
+    <p class="px-5 pt-1 text-center">WELCOME TO SKILLLANCERS, WE UNDERSTAND THE LANDSCAPE OF WORK RAPIDLY EVOLVING. OUR MISSION IS TO EMPOWER FREELANCERS TO SHOWCASE THEIR SKILLS. WE ARE DEDICATED TO CONNECTING SKILLED FREELANCERS WITH BUISNESS SEEKING INNOVATIVE SOLUTIONS AND CREATIVE EXPERTISE.</p>
+    <div class="combine-model m-5" data-aos="zoom-in-up">
+        
+        <div class="container2">
+            <div class="box3 mt-2">
+                <h2>Our Vision</h2>
+                <h3>Empowerment</h3>
+                <p>We envision a world where freelancing is not just an alternative to traditional employment, but a preferred way of working. We aim to create a platform that supports flexibility, creativity, and collaboration, enabling individuals and organizations to achieve their goals together.</p> 
+            </div>
+            <div class="box3 mt-2">
+                <h2>We Do?</h2>
+                <h3>Connection</h3>
+                <p>At Skilllancers, we connect freelancers with the right businesses, ensuring every project is a perfect match. With our resources and tools, we support continuous growth, empowering freelancers to thrive with fair opportunities and a transparent, supportive environment. Keep building your path to success!</p> 
+            </div>
+            <div class="box3 mt-2">
+                <h2>Our Values</h2>
+                <h3>Collaboration</h3>
+                <p>At Skilllancers, we prioritize integrity by building trust through transparency and ethical practices. Our collaborative community thrives on shared knowledge, allowing ideas and talents to flourish. Committed to excellence, we deliver high-quality experiences for both freelancers and clients in every project.</p> 
+            </div>
+        </div>
+    </div>
+    </div>
+    <section class="container " id="accomplishments" >
+    <div  class="Accomplishments pb-3 ">
+    
+        <h1 class="text-center pt-3  p-0" ><b >Accomplishments</b></h1>
+        <hr class="mx-auto "  style="width: 30%; border: 1px solid ;color: #965151; ">
+        <ul class="blocks">
+          <li>
+            <span class="icon">
+              <img src="./assets/analytics.png" />
+            </span>
+            <span class="text">
+              At Tutor Junction, I gained valuable experience in providing personalized tutoring to students across diverse age groups and academic levels, effectively enhancing their understanding and performance through tailored learning strategies and interactive online sessions
+              <span>
+          </li>
+          <li>
+            <span class="icon">
+              <img src="./assets/digital.png" />
+            </span>
+            <span class="text">
+              At Transtutors, I provided expert academic assistance to students globally, delivering clear, concise solutions to complex problems across various subjects while ensuring high-quality, timely responses.
+              <span>
+          </li>
+          <li>
+            <span class="icon">
+              <img src="./assets/comp.png" />
+            </span>
+            <span class="text">
+              At e2f, I contributed to high-quality translation and localization projects, ensuring accuracy and cultural relevance in multilingual content for clients across diverse industries.
+              <span>
+          </li>
+          <li>
+            <span class="icon">
+              <img src="./assets/maintenance.png" />
+            </span>
+            <span class="text">
+              At TransPerfect, I contributed to delivering high-quality translation and localization services, ensuring accuracy and cultural relevance in multilingual projects for global clients across various industries.
+              <span>
+          </li>
+        </ul>
+      </section>
+    </div>
+    
+   
+    <section id="service" class="service">
+        <div class="container">
+            <h1 class="text-center pt-3  p-0" ><b >Services</b></h1>
+            <hr class="mx-auto "  style="width: 30%; border: 1px solid ;color: #965151; ">
+            <div class="row justify-content-center pt-3">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">TRANSLATION & TRANSCRIPTION</h4>
+                            <p class="card-text">Translation and transcription involve converting content between languages or turning audio/video into text while maintaining accuracy and meaning.</p>
+                           
+                        </div>
+                        <img class="card-img-bottom p-2" src="images/picture/Translation.jpg" alt="Card image">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">A. I. ANNOTATOR</h4>
+                            <p class="card-text">AI annotator reviews and labels data, such as text, images, or audio, to help train machine learning models, ensuring the accuracy and relevance of the information for artificial intelligence systems.</p>
+                           
+                        </div>
+                        <img class="card-img-bottom p-2" src="images/picture/AI Annotator.jpg" alt="Card image">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">SOFTWARE DEVELOPMENT WORK</h4>
+                            <p class="card-text">Software development involves designing, coding, and testing applications to meet user needs and solve problems, ensuring smooth operation through debugging .</p>
+                       
+                        </div>
+                        <img class="card-img-bottom p-2 " src="images/picture/Software.jpg" alt="Card image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="team" id="team">
+        <h1 class="text-center pt-3  p-0" ><b style="font-family: cursive;color: white;">Our Team</b></h1>
+        <hr class="mx-auto "  style="width: 30%; border: 1px solid ;color: #965151; ">
+        <div class="row">
+            <div class="card" data-aos="zoom-out-down">
+                <div class="image">
+                    <img src="images/team/karan.jpg" alt="Team member 1">
+                </div>
+                <div class="info">
+                    <h4>Karan Hire</h4>
+                    <span>CEO</span>
+                    <div class="icons pt-3 p-1" >
+                        <p class="pt-1"> &nbsp;&nbsp;&nbsp;&nbsp;B.E.  COMPUTER ENGINEER 5+ YEAR'S FREELANCING EXPERIENCE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card" data-aos="zoom-out-down">
+                <div class="image">
+                    <img src="images/team/ravee.jpg" alt="Team member 1">
+                </div>
+                <div class="info">
+                    <h4>RAVEE KHANDERAO </h4>
+                    <span>Founder</span>
+                    <div class="icons pt-3 p-1" >
+                        <p class="pt-1"> &nbsp;&nbsp;&nbsp;&nbsp;10 YEAR'S OF IN EDUCATION FIELD AND 6 YEAR'S EXPERIENCE OF FREELANCING FILED</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card" data-aos="zoom-out-down">
+                <div class="image">
+                    <img src="images/team/rohee.jpg" alt="Team member 1">
+                   
+                </div>
+                <div class="info">
+                    <h4>ROHEE KHANDERAO</h4>
+                    <span>CO-FOUNDER</span>
+                    <div class="icons pt-3 p-1" >
+                        <p class="pt-1"> &nbsp;&nbsp;&nbsp;&nbsp;10 YEAR'S OF IN EDUCATION FIELD AND 6 YEAR'S EXPERIENCE OF FREELANCING FILED</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="card" data-aos="zoom-out-down">
+                <div class="image">
+                    <img src="images/team/sujal.jpg" alt="Team member 1">
+                </div>
+                <div class="info">
+                    <h4>KRISHNA PAWAR</h4>
+                    <span>BUSINESS MANAGER</span>
+                    <div class="icons  p-1" >
+                        <p class="pt-1"> &nbsp;&nbsp;&nbsp;&nbsp; B.E. COMPUTER ENGINEER. 5+ YEAR'S EXPERIENCE IN FREELANCING</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+       
+      </section>
+
+      <div class="container pb-2">
+        <div class="row">
+            <!-- Left Section -->
+            <section class="col-lg-6 col-md-6 col-sm-12" id="contact">
+                <h1 class="text-center pt-5 p-0"><b >Contact</b></h1>
+                <hr class="mx-auto" style="width: 30%; border: 1px solid; color: #965151;">
+                <ul class="block-line">
+                    <li>
+                        <span class="icon-mid">
+                            <img src="./assets/email.png" />
+                        </span>
+                        <a target="_blank" href="mailto:contact@skilllancers.com" style="color: black; text-decoration: none;">
+                            <span class="text text-black">contact@skilllancers.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="icon-mid">
+                            <img src="./assets/phone.png" />
+                        </span>
+                        <a href="tel:+918468974326" style="color: black; text-decoration: none;">
+                            <span class="text">+91 84689 74326</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="icon-mid">
+                            <img src="./assets/address.png" />
+                        </span>
+                        <a target="_blank" href="https://maps.app.goo.gl/Tcgi9368grjUrGzw9" style="color: black; text-decoration: none;">
+                            <span class="text">Nashik, Maharastra, India</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+    
+            <!-- Right Section -->
+            <section class="col-lg-6 col-md-6 col-sm-12">
+                <h1 class="text-center pt-5 p-0"><b >Or contact me here</b></h1>
+                <hr class="mx-auto" style="width: 30%; border: 1px solid; color: #965151;">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="b037603a-b509-4976-b34c-3a2c28d6b922">
+                    <input type="text" name="full_name" placeholder="Full Name" style="background-color: #333; color: white; border: 1px solid #666; padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px;">
+                    <input type="text" name="education" placeholder="Education" style="background-color: #333; color: white; border: 1px solid #666; padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px;">
+                    <select name="subject" style="background-color: #333; color: white; border: 1px solid #666; padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px;">
+                        <option value="" disabled selected>Subject Expert</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">English</option>
+                        <option value="history">Marathi</option>
+                        <option value="art">French</option>
+                        <option value="art">Hindi</option>
+                    </select>
+                    <input type="email" name="email_address" placeholder="Email Address" style="background-color: #333; color: white; border: 1px solid #666; padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px;">
+                    <input type="text" name="whatsapp_number" placeholder="Contact Number" style="background-color: #333; color: white; border: 1px solid #666; padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px;">
+                    <select name="type_of_work" style="background-color: #333; color: white; border: 1px solid #666; padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px;">
+                        <option value="" disabled selected>Type Of Work</option>
+                        <option value="online">Full Time</option>
+                        <option value="offline">Part Time</option>
+                    </select>
+                    <textarea name="skills_expertise" rows="8" cols="80" placeholder="Describe Your Past Freenlancing Experience" style="background-color: #333; color: white; border: 1px solid #666; padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px;"></textarea>
+                    <button type="submit" style="background-color: #900; color: white; padding: 10px; width: 100%; border: none; border-radius: 5px;">Send message</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    
+      
+
+
+    
+    <!--
+    ==============
+        Testimonial 
+    ==============
+    -->  
+    
+    <section class="testimonial-section sec-padding" style="background-color: rgb(217, 240, 255);">      
+        <div class="container">
+            <h1 class="text-center pt-5 p-0"><b >What People Say!</b></h1>
+  <hr class="mx-auto" style="width: 30%; border: 1px solid; color: #965151;">
+  
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <div class="testimonial-inner d-lg-flex justify-content-between">
+                        <img src="images/picture/Skilllancer logo.png" alt="" class="img-fluid">
+                        <p>Skilllancers connects passionate freelancers with forward-thinking businesses, fostering creativity and collaboration for mutual success. We empower individuals to showcase their expertise and thrive in a supportive, innovative environment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!--
+    ==============
+        Subscribe 
+    ==============
+    -->  
+    
+    <!--
+    ==============
+        Footer 
+    ==============
+    -->  
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-p">
+                        <h3> <b> Bridging talent with the future of work! </b> </h3>
+                    </div>
+                </div>
+                <div class="col-md-7 ml-auto">
+                    <div class="footer-inner d-flex justify-content-between">
+                        <div class="footer-list-item">
+                            <ul class="list-unstyled">
+                                <li class="footer-title">Useful Links</li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#accomplishments">Accomplishments</a></li>
+                                <li><a href="#service">Services</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#contact">Apply Us</a></li>
+                            </ul>
+                        </div> 
+                        <div class="footer-list-item">
+                            <ul class="list-unstyled">
+                                <li class="footer-title">Services</li>
+                                <li><a href="#service">Translation & Transcription</a></li>
+                                <li><a href="#service">A.I. Annotator</a></li>
+                                <li><a href="#service">Software Development Work</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-list-item">
+                            <ul class="list-unstyled">
+                                <li class="footer-title">Connect Here</li>
+                            </ul>
+                            <div class="social-links">
+                                <a target="_blank" href="https://wa.me/917083049287"><i class="fab fa-whatsapp"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/company/bee-synergy/"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/beesynergy?igsh=MTkxZHRpcHBmY2NjdQ=="><i class="fab fa-instagram"></i></a>
+                                <a target="_blank" href="mailto:devloperbeesynergy@gmail.com"><i class="fab fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>                                      
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <small>Copyright © 2020 Programming-hero.com</small>
+            </div>
+        </div>
+    </footer>
+    
+       
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+    duration: 4000 // Duration in milliseconds
+    });
+      </script>
+      
+</body>
+</html>
